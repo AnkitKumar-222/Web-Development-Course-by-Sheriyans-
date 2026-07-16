@@ -1,16 +1,20 @@
 // show real projects
-var product = [
-    {name : "White Chair", headline: "Soft like cloud", price: "15000", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNoYWlyfGVufDB8fDB8fHww"}
-    {name : "Blue chair", headline: "Ladki ka stool", price: "10000", image: "https://images.unsplash.com/photo-1503602642458-232111445657?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"}
+var products= [
+    {name : "White Chair", headline: "Soft like cloud", price: "15000", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNoYWlyfGVufDB8fDB8fHww"},
+    {name : "Blue chair", headline: "Ladki ka stool", price: "10000", image: "https://images.unsplash.com/photo-1503602642458-232111445657?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"},
     {name : "Traditional Chair", headline: "Look very old", price: "16500", image: "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"}
 ];
+
 var popular = [];
 
 function addProduct(){
     var popular = "";
-products.forEach(function(product){
+    
+ products.forEach(function(product){
     clutter += ` <div class="product w-fit rounded-xl p-2 bg-white">
-                <div class="image w-[14rem] h-[13rem] bg-zinc-200 rounded-xl"></div>
+                <div class="image w-[14rem] h-[13rem] bg-zinc-200 rounded-xl overflow-hidden">
+                    <img class="w-full h-full object-cover" src="${product.image}"/>
+                </div>
                 <div class="data w-full px-2 py-5">
                     <h1 class="font-semibold text-xl leading-none tracking-tight">EJ 100 Ox Chair.</h1>
                     <div class="flex justify-between w-full items-center mt-2">
@@ -38,14 +42,18 @@ products.forEach(function(product){
                 </div>
             </div>`;
 })
-}
 
 addProduct();
 
-}
 
-document.querySelecter(".product").innerhtml = cluter;
+document.querySelecter(".products").innerHTML = clutter;
+
+}
+ 
+ 
 
 
 // show real popular products
 // on click of product add button abd it to the cart
+
+
