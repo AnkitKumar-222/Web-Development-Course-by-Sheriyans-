@@ -6,7 +6,8 @@ var product = [
 ];
 var popular = [];
 
-var popular = "";
+function addProduct(){
+    var popular = "";
 products.forEach(function(product){
     clutter += ` <div class="product w-fit rounded-xl p-2 bg-white">
                 <div class="image w-[14rem] h-[13rem] bg-zinc-200 rounded-xl"></div>
@@ -37,6 +38,13 @@ products.forEach(function(product){
                 </div>
             </div>`;
 })
+}
+
+addProduct();
+
+}
+
+document.querySelecter(".product").innerhtml = cluter;
 
 
 // show real popular products
