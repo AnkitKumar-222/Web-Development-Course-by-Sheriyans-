@@ -16,11 +16,11 @@ function addProduct(){
                     <img class="w-full h-full object-cover" src="${product.image}"/>
                 </div>
                 <div class="data w-full px-2 py-5">
-                    <h1 class="font-semibold text-xl leading-none tracking-tight">EJ 100 Ox Chair.</h1>
+                    <h1 class="font-semibold text-xl leading-none tracking-tight">${product.name}</h1>
                     <div class="flex justify-between w-full items-center mt-2">
                         <div class="w-1/2">
-                            <h3 class="font-semibold opacity-20">Hangup data.</h3>
-                            <h4 class="font-semibold mt-2">$3,456</h4>
+                            <h3 class="font-semibold opacity-20">${product.headline}</h3>
+                            <h4 class="font-semibold mt-2">${}</h4>
                         </div>
                         <button class="w-10 h-10 rounded-full shader text-yellow-400"><i
                                 class="ri-add-line"></i></button>
