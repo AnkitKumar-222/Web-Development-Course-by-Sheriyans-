@@ -14,7 +14,7 @@ var popular = [
 function addProduct(){
     var clutter = "";
 products.forEach(function(product){
-    clutter += '<div class="product w-fit rounded-xl p-2 bg-white">
+    clutter += `<div class="product w-fit rounded-xl p-2 bg-white">
                 <div class="image w-[14rem] h-[13rem] bg-zinc-200 rounded-xl overflow-hidden ">
                     <img class="w-full h-full object-cover "  scr="${product.image}"/>
                 </div>
@@ -37,7 +37,21 @@ products.forEach(function(product){
 }
 
 function addPopularProdcuts(){
-    
+    var clutter = "";
+    popular.forEach(function(product){
+        var clutter += ` <div class="popular bg-white p-2 rounded-2xl flex items-start gap-3 w-[60%] flex-shrink-0">
+                    <div class="w-20 h-20 bg-red-500 flex-shrink-0 rounded-2xl border-4 border-white overflow-hidden">
+                        <img class="w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1571575173700-afb9492e6a50?q=80&w=3412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="data py-2 w-full">
+                        <h1 class="leading-none font-semibold">Eyes Lounge</h1>
+                        <h4 class="leading-none mt-2 text-sm font-semibold opacity-20">Bisco Do Lobo</h4>
+                        <h4 class="mt-3 font-semibold text-zinc-500">$12,000</h4>
+                    </div>
+                </div>`;
+    });
 }
 
 addProduct();
