@@ -70,6 +70,25 @@ function addToCart(){
     })
 }
 
+function showCart(){
+    document.querySelector(".carticon")
+    .addEventListener("click", function(){
+        document.querySelector(".cartexpnd").style.display = "block";
+
+        var clutter = "";
+        cart.forEach(function(prod, index){
+            clutter += `<div class="flex gap-2 bg-white p-2 rounded-lg">
+            <div class ></div>
+
+
+
+
+            </div>`;
+        })
+    });
+}
+
+showCart();
 addToCart();
 addPopularProdcuts();
 addProduct();
