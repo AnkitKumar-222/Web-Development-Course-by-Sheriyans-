@@ -78,13 +78,17 @@ function showCart(){
         var clutter = "";
         cart.forEach(function(prod, index){
             clutter += `<div class="flex gap-2 bg-white p-2 rounded-lg">
-            <div class ></div>
-
-
-
-
+            <div class="w-10 h-10 flex-shrink-0 rounded-lg overflow-hidden">
+                <img class="w-full h-full object-cover" src="${prod.image}"/>
+            </div>
+            <div>
+                <h3 class="font-semibold">${prod.name}</h3>
+                <h5 class="text-sm font-semibold opacity-80">${prod.price}</h5>
+            </div>
             </div>`;
         })
+        document.querySelector(".cartexpnd")
+        .innerHTML = clutter;
     });
 }
 
