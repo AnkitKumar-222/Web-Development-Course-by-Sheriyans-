@@ -22,9 +22,9 @@ html , body{
     height: 100%;
     background-color: #333;
     width: 45%;
-    background-image: url(cover.jpg);
+    background-image: url(https://i.pinimg.com/474x/1b/e7/aa/1be7aab08377c2cce68442033c706f3a.jpg);
     background-size: cover;
-    background-position: top;
+    background-position:top;
 }
 #right{
     height: 100%;
