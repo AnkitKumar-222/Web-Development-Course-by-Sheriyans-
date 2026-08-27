@@ -1,8 +1,8 @@
 var arr = [
-    { songName: "jale 2", url: "./songs/song1.mp3", img: "./images/jale 2.jpg" },
-    { songName: "Pehle Bhi main", url: "./songs/song2.mp3", img: "./images/phele bhi mein.jpg" },
-    { songName: "Ram siya ram", url: "./songs/song3.mp3", img: "./images/ram siya.jpg" },
-    { songName: "Arjan Valley", url: "./songs/song4.mp3", img: "./images/arjan valley.jpg" }
+    { songName: "jale 2", url: "./songs/song1.mp3", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhaeaFGbjRG4UiRlAfvkhWrTYdfdPeKjgShxfObHRChQ&s=10" },
+    { songName: "Pehle Bhi main", url: "./songs/song2.mp3", img: "https://i.pinimg.com/474x/66/83/6a/66836a47eed2f603f06bf39138c02d77.jpg" },
+    { songName: "Ram siya ram", url: "./songs/song3.mp3", img: "https://c.saavncdn.com/709/Ram-Siya-Ram-Hindi-2023-20230831120504-500x500.jpg" },
+    { songName: "Arjan Valley", url: "./songs/song4.mp3", img: "https://i.pinimg.com/474x/c6/3c/87/c63c87a72a253d08c4008d608758572e.jpg" }
 ]
 var allSongs = document.querySelector("#all-songs")
 var poster = document.querySelector("#left")
