@@ -78,3 +78,4 @@ backward.addEventListener("click", function () {
         backward.style.opacity = 0.4
     }
 })
+
