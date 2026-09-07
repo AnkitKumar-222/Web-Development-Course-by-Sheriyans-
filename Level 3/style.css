@@ -2,14 +2,30 @@ body[theme="black"]{
     background-color: #000;
 }
 
+body[theme="black"] .section{
+    color: #fff;
+}
+
 body[theme="cyan"]{
     background-color: #83a7b0;
+}
+
+body[theme="cyan"] .section{
+    color: #03080a
 }
 
 body[theme="salmon"]{
     background-color: salmon;
 }
 
+body[theme="salmon"] .section{
+    color: rgb(83, 41, 37);
+}
+
 body[theme="white"]{
     background-color: #fff;
+}
+
+body[theme="white"] .section{
+    color: #fff;
 }
