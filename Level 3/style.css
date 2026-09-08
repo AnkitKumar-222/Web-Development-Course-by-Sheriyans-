@@ -1,3 +1,7 @@
+*::selection{
+    background-color: #EF9D71;
+}
+
 body[theme="black"]{
     background-color: #000;
 }
@@ -29,5 +33,7 @@ body[theme="white"]{
 body[theme="white"] .section{
     color: #fff;
 }
+
+
 
 
